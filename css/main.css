@@ -9,11 +9,12 @@
 
 :root {
   --font-color: #777777;
-  --title-color: #fab700;
+  --highlight-color: #b18307;
+  --subtitle-color: #dc3233;
 }
 
 ::selection {
-  background-color: #fab700;
+  background-color: var(--highlight-color);
   color: #fff;
 }
 
@@ -264,7 +265,7 @@ h6, .h6 {
 }
 
 b, sup, sub, u, del {
-  color: #fab700;
+  color: var(--highlight-color);
 }
 
 h1 {
@@ -763,7 +764,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
   background: #f9f9ff;
   padding: 0 20px;
-  height: 100px;
+  /* height: 100px; */
   resize: none;
 }
 
@@ -1987,6 +1988,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding-left: 20px;
 }
 
+.single-service {
+  margin: 20px 0 10px 0;
+}
+
 .single-service h4 {
   padding: 20px 0;
   -webkit-transition: all 0.3s ease 0s;
@@ -2000,7 +2005,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-service:hover h4 {
-  color: #fab700;
+  color: var(--highlight-color);
 }
 
 .single-service .thumb {
@@ -2040,8 +2045,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .faq-area {
-  background: url(../img/fact.jpg) center;
-  background-size: cover;
+  /* background: url(../img/fact.jpg) center;
+  background-size: cover; */
 }
 
 .faq-area .overlay-bg {
@@ -2870,6 +2875,11 @@ body.mobile-nav-active #mobile-nav-toggle {
                End Blog Details  Page style
 ################
 */
+nav,
+div,
+p {
+  font-family: "Inter", sans-serif !important;
+}
 
 .uppercase {
   text-transform: uppercase !important;
@@ -2878,7 +2888,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .title-divider {
   width: 10%; 
   height: 5px; 
-  background-color: #dc3233; 
+  background-color: #03fc21; 
   display: flex; 
   margin: 0 auto
 }
@@ -2912,4 +2922,78 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .service-title {
   color: black;
+}
+
+.subtitle {
+  color: var(--subtitle-color);
+}
+
+.highlight {
+  color: var(--highlight-color) !important;
+}
+
+.project-area,
+.contact-area {
+  background-color: #f9f9f9;
+  color: var(--font-color);
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.section-award {
+  padding: 20px 0 30px 0;
+  border-bottom: 1px dotted #eee;
+}
+
+.award-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+}
+
+.award-left .award-description .subtitle,
+.award-left .award-description a {
+  align-self: flex-start;
+}
+
+.award-right .award-description .subtitle,
+.award-right .award-description a {
+  align-self: flex-end;
+}
+
+.career-area {
+  height: 30vh;
+  background: url(../dist/img/careers/work-with-us.png) center;
+  background-size: stretch; 
+  /* background-repeat: no-repeat; */
+}
+
+.career-area .overlay-bg {
+  opacity: 0.3 !important;
+}
+
+.contact-area .icon span {
+  font-size: 25px;
+}
+
+.contact-area .contact-details {
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-area .owl-carousel {
+    height: 65vh;
+  }
+
+  .award-left .award-description {
+    padding-right: 50px;
+  }
+
+  .award-right .award-description {
+    padding-left: 50px;
+  }
 }
