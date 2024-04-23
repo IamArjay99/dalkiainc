@@ -8,7 +8,7 @@
 /* =================================== */
 
 :root {
-  --font-color: #777777;
+  --font-color: #222;
   --highlight-color: #b18307;
   --subtitle-color: #00235a;
   --divider-color: #fab700;
@@ -298,7 +298,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .typography h1, .typography h2, .typography h3, .typography h4, .typography h5, .typography h6 {
-  color: #777777;
+  color: var(--font-color);
 }
 
 .button-area {
@@ -687,14 +687,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list li {
   list-style-type: auto;
-  color: #777777;
+  color: var(--font-color);
   font-weight: 300;
   line-height: 1.82em !important;
 }
 
 .ordered-list li span {
   font-weight: 300;
-  color: #777777;
+  color: var(--font-color);
 }
 
 .ordered-list-alpha li {
@@ -707,7 +707,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list-alpha li span {
   font-weight: 300;
-  color: #777777;
+  color: var(--font-color);
 }
 
 .ordered-list-roman li {
@@ -720,7 +720,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .ordered-list-roman li span {
   font-weight: 300;
-  color: #777777;
+  color: var(--font-color);
 }
 
 .single-input {
@@ -2346,43 +2346,43 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-footer-widget ::-moz-selection {
   /* Code for Firefox */
   background-color: #191919 !important;
-  color: #777777;
+  color: var(--font-color);
 }
 
 .single-footer-widget ::selection {
   background-color: #191919 !important;
-  color: #777777;
+  color: var(--font-color);
 }
 
 .single-footer-widget ::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
-  color: #777777;
+  color: var(--font-color);
   font-weight: 300;
 }
 
 .single-footer-widget :-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
-  color: #777777;
+  color: var(--font-color);
   opacity: 1;
   font-weight: 300;
 }
 
 .single-footer-widget ::-moz-placeholder {
   /* Mozilla Firefox 19+ */
-  color: #777777;
+  color: var(--font-color);
   opacity: 1;
   font-weight: 300;
 }
 
 .single-footer-widget :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #777777;
+  color: var(--font-color);
   font-weight: 300;
 }
 
 .single-footer-widget ::-ms-input-placeholder {
   /* Microsoft Edge */
-  color: #777777;
+  color: var(--font-color);
   font-weight: 300;
 }
 
@@ -2576,7 +2576,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-post .comment-wrap ul li a {
-  color: #777777;
+  color: var(--font-color);
 }
 
 .single-post .social-wrap ul {
@@ -2584,7 +2584,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .single-post .social-wrap ul li a i {
-  color: #777777;
+  color: var(--font-color);
 }
 
 .single-post .social-wrap ul li a i:hover {
@@ -2817,7 +2817,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .comment-sec-area .comment {
-  color: #777777;
+  color: var(--font-color);
 }
 
 .comment-sec-area .btn-reply {
