@@ -2011,6 +2011,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .single-service .thumb {
   overflow: hidden;
+  border: 1px dotted #8b949e;
 }
 
 .single-service .thumb img {
@@ -2946,7 +2947,7 @@ p {
 
 .section-award {
   padding: 20px 0 30px 0;
-  border-bottom: 1px dotted #eee;
+  border-bottom: 1px solid #eee;
 }
 
 .award-description {
@@ -2968,10 +2969,9 @@ p {
 }
 
 .career-area {
-  height: 50vh;
+  height: 57vh;
   background: url(../dist/img/careers/work-with-us.png) center;
   background-size: cover; 
-  /* background-repeat: no-repeat; */
 }
 
 .footer-area a {
@@ -2979,7 +2979,7 @@ p {
 }
 
 .career-area .overlay-bg {
-  opacity: 0.1 !important;
+  opacity: 0.05 !important;
 }
 
 .contact-area .icon span {

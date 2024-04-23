@@ -19,11 +19,13 @@
 	<link rel="stylesheet" href="css/hexagons.min.css">
 	<link rel="stylesheet" href="css/animate.min.css">
 	<link rel="stylesheet" href="css/owl.carousel.css">
-	<link rel="stylesheet" href="css/main.css">
-
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="dist/css/timeline.min.css">
+	<link rel="stylesheet" href="dist/css/aos.css">
+	
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -73,7 +75,7 @@
 		</div>
 	</section>
 
-	<section class="home-area section-gap" id="home">
+	<section class="home-area section-gap" id="home" data-aos="fade-down">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -97,30 +99,67 @@
 
 	<section class="about-area section-gap" id="about">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center" data-aos="fade-up">
 				<div class="col-md-8 pb-30 header-text text-center">
 					<h2 class="mb-10">ABOUT US</h2>
 					<div class="title-divider"></div>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-md-12" data-aos="fade-down">
 					<h3 class="mt-20 subtitle">OUR HISTORY / TIMELINE</h3>
-					<img src="dist/img/about/our-timeline.png" alt="Our Timeline" class="img-fluid" style="width: 100% !important; height: 500px;">
+					<div class="container timeline mt-30 mb-30">
+						<div class="timeline__wrap">
+							<div class="timeline__items">
+								<div class="timeline__item">
+									<div class="timeline__content">
+										<h3 class="text-center mb-10 highlight">2021</h3>
+										<p>
+											Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, voluptas.
+										</p>
+									</div>
+								</div>
+								<div class="timeline__item">
+									<div class="timeline__content">
+										<h3 class="text-center mb-10 highlight">2022</h3>
+										<p>
+											Completed 92 projects since the day of incorporation
+										</p>
+									</div>
+								</div>
+								<div class="timeline__item">
+									<div class="timeline__content">
+										<h3 class="text-center mb-10 highlight">2023</h3>
+										<p>
+											15 on-going projects ending year 2023
+										</p>
+									</div>
+								</div>
+								<div class="timeline__item">
+									<div class="timeline__content">
+										<h3 class="text-center mb-10 highlight">2024</h3>
+										<p>
+											8 newly awarded projects since January
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
-				<div class="col-md-12">
+				<div class="col-md-12" data-aos="fade-right">
 					<h3 class="mt-20 pb-10 subtitle">OUR MISSION</h3>
 					<blockquote class="generic-blockquote">
 						Deliver with passion all our undertakings to the fullest expectation of the client while adhering to the safety of all the people and the environment we are working with.
 					</blockquote>
 				</div>
-				<div class="col-md-12">
+				<div class="col-md-12" data-aos="fade-left">
 					<h3 class="mt-20 pb-10 subtitle">OUR VISION</h3>
 					<blockquote class="generic-blockquote">
 						Become a leading and highly regarded contracting company in building facade construction.
 					</blockquote>
 				</div>
-				<div class="col-md-12">
+				<div class="col-md-12" data-aos="fade-up">
 					<h3 class="mt-20 pb-10 subtitle">OUR QUALITY POLICY</h3>
 					<p class="text-justify">
 						<b>​Dalkia Incorporated</b> shall pursue sustainable growth by continuously developing products and providing reliable services of quality, safe, top of the line, and superior range of curtain walls, windows & metal cladding.​
@@ -138,10 +177,10 @@
 				</div>
 				<div class="col-md-12">
 					<div class="container cat-area">
-						<h3 class="mt-20 pb-10 subtitle">SCOPE AND SERVICES</h3>
+						<h3 class="mt-20 pb-10 subtitle" data-aos="fade-down-right">SCOPE AND SERVICES</h3>
 						<div class="row mt-20">
 							<div class="col-lg-4 mt-10">
-								<div class="single-cat d-flex flex-column service-item service-border">
+								<div class="single-cat d-flex flex-column service-item service-border" data-aos="flip-left">
 									<img src="dist/img/services/design.png" alt="Design" class="service-img">
 									<h4 class="mb-20 service-title">Design Consultancy</h4>
 									<p class="text-justify">
@@ -150,7 +189,7 @@
 								</div>
 							</div>
 							<div class="col-lg-4 mt-10">
-								<div class="single-cat d-flex flex-column service-item service-border">
+								<div class="single-cat d-flex flex-column service-item service-border" data-aos="flip-up">
 									<img src="dist/img/services/engineering.png" alt="Engineering" class="service-img">
 									<h4 class="mb-20 service-title">Detailed Design & Engineering</h4>
 									<p class="text-justify">
@@ -159,7 +198,7 @@
 								</div>
 							</div>
 							<div class="col-lg-4 mt-10">
-								<div class="single-cat d-flex flex-column service-item service-border">
+								<div class="single-cat d-flex flex-column service-item service-border" data-aos="flip-left">
 									<img src="dist/img/services/maintenance.png" alt="Maintenance" class="service-img">
 									<h4 class="mb-20 service-title">Procurement, Assembly & Installation</h4>
 									<p class="text-justify">
@@ -176,177 +215,265 @@
 
 	<section class="project-area section-gap" id="project">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center" data-aos="fade-up">
 				<div class="col-md-8 pb-30 header-text text-center">
 					<h2 class="mb-10">PROJECTS</h2>
 					<div class="title-divider"></div>
 				</div>
 			</div>
-			<div class="row">
+			<div class="row" data-aos="zoom-in-up">
 				<div class="col-lg-4">
 					<div class="single-service">
 						<div class="thumb">
-							<img src="img/s1.jpg" alt="">
+							<img src="dist/img/projects/completed/10-west-new-1.jpg" alt="">
 						</div>
-						<h4>Automotive Engineering</h4>
+						<h4 class="text-uppercase">10 WEST CAMPUS</h4>
 						<div class="project-details">
-							<div><b>No. of floors: </b><span>38 Storey Residential Building</span></div>
-							<div><b>Scope of Work: </b><span>Supply & Installation Of Curtainwall, Ribbon Windows & Diagonal Aluminum Fins</span></div>
+							<div>
+								<b>No. of floors: </b>
+								<span>
+									17
+								</span>
+							</div>
+							<div>
+								<b>Scope of Work: </b>
+								<span>
+									Design, Supply & Installation Of Unitized Doors & Windows
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-4">
 					<div class="single-service">
 						<div class="thumb">
-							<img src="img/s2.jpg" alt="">
+							<img src="dist/img/projects/completed/acc-edited.jpg" alt="">
 						</div>
-						<h4>Construction & Engineering</h4>
+						<h4 class="text-uppercase">ACC CORPORATE CENTER</h4>
 						<div class="project-details">
-							<div><b>No. of floors: </b><span>38 Storey Residential Building</span></div>
-							<div><b>Scope of Work: </b><span>Supply & Installation Of Curtainwall, Ribbon Windows & Diagonal Aluminum Fins</span></div>
+							<div>
+								<b>No. of floors: </b>
+								<span>
+									24
+								</span>
+							</div>
+							<div>
+								<b>Scope of Work: </b>
+								<span>
+									Design, Supply & Installation Of Doors, Windows & Curtainwall
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-4">
 					<div class="single-service">
 						<div class="thumb">
-							<img src="img/s3.jpg" alt="">
+							<img src="dist/img/projects/completed/aeropark-edited.jpg" alt="">
 						</div>
-						<h4>Industrial Engineering</h4>
+						<h4 class="text-uppercase">AEROPARK Bldg. A & B</h4>
 						<div class="project-details">
-							<div><b>No. of floors: </b><span>38 Storey Residential Building</span></div>
-							<div><b>Scope of Work: </b><span>Supply & Installation Of Curtainwall, Ribbon Windows & Diagonal Aluminum Fins</span></div>
+							<div>
+								<b>No. of floors: </b>
+								<span>
+									12 & 11
+								</span>
+							</div>
+							<div>
+								<b>Scope of Work: </b>
+								<span>
+									Design, Supply & Installation Of Curtainwall & ACP Cladding
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-4">
 					<div class="single-service">
 						<div class="thumb">
-							<img src="img/s1.jpg" alt="">
+							<img src="dist/img/projects/completed/alhi-corpoffice-actualphoto-dalkia.jpg" alt="">
 						</div>
-						<h4>Automotive Engineering</h4>
+						<h4 class="text-uppercase">ALHI CORPORATE OFFICE</h4>
 						<div class="project-details">
-							<div><b>No. of floors: </b><span>38 Storey Residential Building</span></div>
-							<div><b>Scope of Work: </b><span>Supply & Installation Of Curtainwall, Ribbon Windows & Diagonal Aluminum Fins</span></div>
+							<div>
+								<b>No. of floors: </b>
+								<span>
+									Two 12 Storeys + 6 Level Podium
+								</span>
+							</div>
+							<div>
+								<b>Scope of Work: </b>
+								<span>
+									Supply & Installation Of Curtainwall, Windows, Storefronts, Glass Canopy, Railings & Louvers
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-4">
 					<div class="single-service">
 						<div class="thumb">
-							<img src="img/s2.jpg" alt="">
+							<img src="dist/img/projects/completed/AVIDA-ASTEN-1.jpg" alt="">
 						</div>
-						<h4>Construction & Engineering</h4>
+						<h4 class="text-uppercase">AVIDA ASTEN TOWER 1 & 2</h4>
 						<div class="project-details">
-							<div><b>No. of floors: </b><span>38 Storey Residential Building</span></div>
-							<div><b>Scope of Work: </b><span>Supply & Installation Of Curtainwall, Ribbon Windows & Diagonal Aluminum Fins</span></div>
+							<div>
+								<b>No. of floors: </b>
+								<span>
+									32 Each Building
+								</span>
+							</div>
+							<div>
+								<b>Scope of Work: </b>
+								<span>
+									Design, Supply & Installation Of Doors, Windows, Storefronts And Curtain Walls
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
+
 				<div class="col-lg-4">
 					<div class="single-service">
 						<div class="thumb">
-							<img src="img/s3.jpg" alt="">
+							<img src="dist/img/projects/completed/AVIDA-VERTE.jpg" alt="">
 						</div>
-						<h4>Industrial Engineering</h4>
+						<h4 class="text-uppercase">AVIDA VERTE TOWER 1</h4>
 						<div class="project-details">
-							<div><b>No. of floors: </b><span>38 Storey Residential Building</span></div>
-							<div><b>Scope of Work: </b><span>Supply & Installation Of Curtainwall, Ribbon Windows & Diagonal Aluminum Fins</span></div>
+							<div>
+								<b>No. of floors: </b>
+								<span>
+									29
+								</span>
+							</div>
+							<div>
+								<b>Scope of Work: </b>
+								<span>
+									Design, Supply & Installation Of Doors, Windows, Storefronts And Curtain Walls
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-lg-12 mt-30 text-center">
-					<button class="genric-btn danger-border circle">Explore More</button>
+
+				<div class="col-lg-12 text-center">
+					<a href="#" class="genric-btn danger-border circle mt-30">View All Projects</a>
 				</div>
+
 			</div>
 		</div>
 	</section>
 
 	<section class="award-area section-gap" id="award" style="padding-bottom: 10px;">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center" data-aos="zoom-out-down">
 				<div class="col-md-8 pb-30 header-text text-center">
 					<h2 class="mb-10">CERTIFICATIONS AND AWARDS</h2>
 					<div class="title-divider"></div>
 				</div>
 			</div>
-			<div class="section-award">
+
+			<div class="section-award" data-aos="fade-up">
 				<div class="row award-left">
 					<div class="col-md-3">
-						<img src="dist/img/awards/award1.png" alt="" class="img-fluid">
+						<img src="dist/img/awards/award1.jpg" alt="" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20 award-description">
-						<h3 class="mb-20 subtitle">Dalkia I USGBC Certified Member</h3>
+						<h3 class="mb-20 subtitle text-uppercase">Philippine Green Building Council Member</h3>
 						<p>
-							Since July 15, 2015, Dalkia Incorporated has been a UGBC-certified member. To prove management's commitment to long-term sustainability
+							The Philippine Green Building Council (PHILGBC) is a national non-stock, non-profit organization that promotes sharing of knowledge on green building best practices to the industry to ensure a sustainable environment. Â PHILGBC represents more than 300 corporations and hundreds of individuals working together in the promotion of green buildings in the Philippines. The PHILGBC is an established member of the World Green Building Council (WorldGBC), and a member organization of the International Initiative for the Sustainable Built Environment (iiSBE).
 						</p>
-						<a href="#" class="genric-btn link-border circle">Want to learn more?</a>
 					</div>
 				</div>
 			</div>
-			<div class="section-award">
+			<div class="section-award" data-aos="fade-down">
 				<div class="row award-right">
 					<div class="col-md-9 award-description">
-						<h3 class="mb-20 subtitle">NFRC – ACE CERTIFIED</h3>
+						<h3 class="mb-20 subtitle text-uppercase">NFRC – ACE CERTIFIED</h3>
 						<p>
-							Dalkia Incorporated has four NFRC-ACE certified staff. This person is authorized to use the Component Modeling Approach Software Tool (CMAST) to perform performance calculations of fenestration products and issue label certificates. They have completed and passed all required examinations, attended an approved calculation entity training workshop, and received a Certificate of Approval.
+							Four employees of Dalkia Incorporated are NFRC – ACE Certified. It is an individual who has attended an Approved Calculation Entity Training Workshop, completed and passed all necessary examinations, and has obtained a Certificate of Approval which qualifies him or her to carry out performance calculations of fenestration products and issue label certificates using the Component Modeling Approach Software Tool (CMAST).
 						</p>
-						<a href="#" class="genric-btn link-border circle">Want to learn more?</a>
 					</div>
 					<div class="col-md-3">
-						<img src="dist/img/awards/award2.png" alt="" class="img-fluid">
+						<img src="dist/img/awards/award2.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
 			</div>
-			<div class="section-award">
+
+			<div class="section-award" data-aos="fade-right">
 				<div class="row award-left">
 					<div class="col-md-3">
-						<img src="dist/img/awards/award1.png" alt="" class="img-fluid">
+						<img src="dist/img/awards/award3.jpg" alt="" class="img-fluid">
 					</div>
 					<div class="col-md-9 mt-sm-20 award-description">
-						<h3 class="mb-20 subtitle">Dalkia I USGBC Certified Member</h3>
+						<h3 class="mb-20 subtitle text-uppercase">Dalkia | USGBC Certified Member</h3>
 						<p>
-							Since July 15, 2015, Dalkia Incorporated has been a UGBC-certified member. To prove management's commitment to long-term sustainability
+							Dalkia Incorporated is USGBC certified member since July 15, 2015 up to present.
+							<br><br>
+							To show the management drive for sustainable construction, We become active at green building initiatives and acquired membership at US Green Building Council (USBGC).
 						</p>
-						<a href="#" class="genric-btn link-border circle">Want to learn more?</a>
 					</div>
 				</div>
 			</div>
-			<div class="section-award">
+			<div class="section-award" data-aos="fade-left">
 				<div class="row award-right">
 					<div class="col-md-9 award-description">
-						<h3 class="mb-20 subtitle">NFRC – ACE CERTIFIED</h3>
+						<h3 class="mb-20 subtitle text-uppercase">Golden Globe Awards for Business Excellence 2017</h3>
 						<p>
-							Dalkia Incorporated has four NFRC-ACE certified staff. This person is authorized to use the Component Modeling Approach Software Tool (CMAST) to perform performance calculations of fenestration products and issue label certificates. They have completed and passed all required examinations, attended an approved calculation entity training workshop, and received a Certificate of Approval.
+							TheÂ Golden Globe Annual Awards for Business ExcellenceÂ award-giving body is celebrating their “10th Year” Anniversary this 2017, and what better way to celebrate but to continue to recognize well deserving brands and personalities from different sectors of business including government service.
+							<br><br>
+							Dalkia Inc. is humbled and grateful because of the Nomination as Best Leading Design & Consultancy Company in the 2017 Golden Globe Annual Awards for Business Excellence.
 						</p>
-						<a href="#" class="genric-btn link-border circle">Want to learn more?</a>
 					</div>
 					<div class="col-md-3">
-						<img src="dist/img/awards/award2.png" alt="" class="img-fluid">
+						<img src="dist/img/awards/award4.jpg" alt="" class="img-fluid">
 					</div>
 				</div>
 			</div>
-		</div>
+
+			<div class="section-award" data-aos="fade-up">
+				<div class="row award-left">
+					<div class="col-md-3">
+						<img src="dist/img/awards/award6.jpg" alt="" class="img-fluid">
+					</div>
+					<div class="col-md-9 mt-sm-20 award-description">
+						<h3 class="mb-20 subtitle text-uppercase">Quality Bond | Dow Corning Member</h3>
+						<p>
+							We have also been recently awarded as the 5th local contractor in the country to receive the quality bond membership from Dow Corning
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="section-award" data-aos="fade-up">
+				<div class="row award-right">
+					<div class="col-md-9 award-description">
+						<h3 class="mb-20 subtitle text-uppercase">Dalkia Inc is now ISO Certified 9001 : 2015</h3>
+						<p>
+							Dalkia Inc. has been certified to meet the requirements of ISO 9001:2015 last November 2016. Audited and certified by Jones Unson Solutions, Dalkia Inc is now accredited with Certificate Registration No. 44 100 17 93 0008 under the scope Â“Design and Build of Curtain Walls, Windows & Metal CladdingÂ”
+							<br><br>
+							Through patience and a lot of hard work, all things have become possible for the organization of Dalkia Inc.Â 
+							<br><br>
+							Congratulations to all
+						</p>
+					</div>
+					<div class="col-md-3">
+						<img src="dist/img/awards/award5.jpg" alt="" class="img-fluid">
+					</div>
+				</div>
+			</div>
+
 	</section>
 
-	
-
-	<!-- <section class="career-opportunity-area section-gap" id="career-opportunity" style="padding: 20px 0;">
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-12 header-text text-center">
-					<h2 class="">CAREERS</h2>
-					<div class="title-divider"></div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 	<section class="career-opportunity-area career-area section-gap relative">
 		<div class="overlay overlay-bg"></div>
 	</section>
 	<section class="career-opportunity-area section-gap" id="career-opportunity2">
 		<div class="container">
-			<div class="row justify-content-center align-items-center">
+			<div class="row justify-content-center align-items-center" data-aos="zoom-out-up">
 				<div class="col-lg-8 col-md-12 home-about-left">
 					<h3 class="mb-20 subtitle">
 						Grow with us!
@@ -365,7 +492,7 @@
 
 	<section class="contact-area section-gap">
 		<div class="container">
-			<div class="row justify-content-center">
+			<div class="row justify-content-center" data-aos="zoom-out-down">
 				<div class="col-md-8 pb-30 header-text text-center">
 					<h2 class="mb-10">CONTACTS</h2>
 					<div class="title-divider"></div>
@@ -374,9 +501,10 @@
 
 			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30892.6687473482!2d121.101266!3d14.565789!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c7c79cee6faf%3A0xbb570ff13e16c98b!2sDalkia%20Incorporated!5e0!3m2!1sen!2sus!4v1713778962162!5m2!1sen!2sus" 
 				width="100%" height="450" style="border:0;"
-				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+				data-aos="flip-left"></iframe>
 
-			<div class="row mt-30">
+			<div class="row mt-30" data-aos="fade-right">
 				<div class="col-lg-3"></div>
 				<div class="col-lg-6">
 					<h3 class="subtitle mt-20 mb-20">WRITE US A MESSAGE</h3>
@@ -497,12 +625,7 @@
 	</div>
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="../../ajax/libs/popper.js/1.12.9/umd/popper.min-1.js"
-		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-		crossorigin="anonymous"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript"
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>
 	<script src="js/easing.min.js"></script>
 	<script src="js/hoverIntent.js"></script>
 	<script src="js/superfish.min.js"></script>
@@ -514,6 +637,11 @@
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/waypoints.min.js"></script>
 	<script src="js/mail-script.js"></script>
+	<script src="dist/js/timeline.min.js"></script>
+	<script src="dist/js/aos.js"></script>
+	
+
+
 	<script src="js/main.js"></script>
 
 	<script>
@@ -527,6 +655,14 @@
 				autoplayHoverPause: true,
 				animateOut: 'fadeOut'
 			});
+
+			$('.timeline').timeline({
+				forceVerticalMode: 500,
+				mode: 'horizontal',
+				visibleItems: 3
+			});
+
+			AOS.init();
 		});
 	</script>
 </body>
