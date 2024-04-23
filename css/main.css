@@ -10,7 +10,8 @@
 :root {
   --font-color: #777777;
   --highlight-color: #b18307;
-  --subtitle-color: #dc3233;
+  --subtitle-color: #00235a;
+  --divider-color: #dc3233;
 }
 
 ::selection {
@@ -2888,7 +2889,7 @@ p {
 .title-divider {
   width: 10%; 
   height: 5px; 
-  background-color: #03fc21; 
+  background-color: var(--divider-color); 
   display: flex; 
   margin: 0 auto
 }
@@ -2966,14 +2967,14 @@ p {
 }
 
 .career-area {
-  height: 30vh;
+  height: 60vh;
   background: url(../dist/img/careers/work-with-us.png) center;
-  background-size: stretch; 
+  background-size: cover; 
   /* background-repeat: no-repeat; */
 }
 
 .career-area .overlay-bg {
-  opacity: 0.3 !important;
+  opacity: 0.1 !important;
 }
 
 .contact-area .icon span {
