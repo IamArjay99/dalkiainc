@@ -11,7 +11,7 @@
   --font-color: #777777;
   --highlight-color: #b18307;
   --subtitle-color: #00235a;
-  --divider-color: #dc3233;
+  --divider-color: #fab700;
 }
 
 ::selection {
@@ -2264,13 +2264,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .footer-area {
-  padding-top: 100px;
-  background-color: #04091e;
+  background: url(../dist/img/footer/footer-bg.jpg) center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footer-area h6 {
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   font-size: 18px;
   font-weight: 600;
 }
@@ -2934,7 +2935,7 @@ p {
 }
 
 .project-area,
-.contact-area {
+.career-opportunity-area {
   background-color: #f9f9f9;
   color: var(--font-color);
 }
@@ -2967,10 +2968,14 @@ p {
 }
 
 .career-area {
-  height: 60vh;
+  height: 50vh;
   background: url(../dist/img/careers/work-with-us.png) center;
   background-size: cover; 
   /* background-repeat: no-repeat; */
+}
+
+.footer-area a {
+  color: white;
 }
 
 .career-area .overlay-bg {
@@ -2983,6 +2988,17 @@ p {
 
 .contact-area .contact-details {
   padding-left: 15px;
+}
+
+.footer-area .contact-details .icon,
+.footer-area .contact-details p {
+  color: white;
+}
+
+.footer-area .icon {
+  color: white;
+  font-size: 20px;
+  padding-right: 7px;
 }
 
 @media screen and (min-width: 768px) {
