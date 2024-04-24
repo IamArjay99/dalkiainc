@@ -97,7 +97,7 @@
 }
 
 .timeline__content {
-    background-color: #fff;
+    background-color: #f6f8fa;
     border: 1px solid #ccc;
     border-radius: 10px;
     color: #333;
@@ -191,7 +191,8 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    top: 100%
+    top: 100%;
+    background: #b18307;
 }
 
 .timeline--horizontal .timeline__item .timeline__item__inner {
