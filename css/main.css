@@ -3001,9 +3001,57 @@ p {
   padding-right: 7px;
 }
 
+.about-carousel .item img {
+  opacity: 0.5;
+}
+
+.container.page-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  right: 0;
+  padding-bottom: 35px;
+}
+
+a.active {
+  color: var(--highlight-color);
+}
+
+.tab-content .project-details {
+  font-size: 0.8rem;
+}
+
+.tab-content.projects {
+  background: white;
+  padding: 5px 15px;
+}
+
+a.nav-project {
+  color: var(--font-color) !important;
+}
+
+a.nav-project.active {
+  color: var(--highlight-color) !important;
+  font-weight: bold !important;
+}
+
+.card-career {
+  transition: 0.5s;
+}
+
+.card-career:hover {
+  background: #fdfdfd;
+  transform: scale(1.02);
+}
+
 @media screen and (min-width: 768px) {
   .banner-area .owl-carousel {
     height: 65vh;
+  }
+
+  .banner-area.about-carousel .owl-carousel {
+    height: 40vh;
   }
 
   .award-left .award-description {

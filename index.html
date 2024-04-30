@@ -29,7 +29,7 @@
 </head>
 
 <body>
-	<header id="header" id="home">
+	<header id="header">
 		<div class="container main-menu">
 			<div class="row align-items-center justify-content-between d-flex">
 				<div id="logo">
@@ -39,25 +39,25 @@
 				</div>
 				<nav id="nav-menu-container">
 					<ul class="nav-menu">
-						<li><a href="contact.html">Home</a></li>
+						<li><a href="index.html" class="active">Home</a></li>
 						<li class="menu-has-children">
-							<a href="">About Us</a>
+							<a href="about.html">About Us</a>
 							<ul>
-								<li><a href="blog-home.html" class="uppercase">Our Timeline / History</a></li>
-								<li><a href="blog-single.html" class="uppercase">Our Mission and Vision</a></li>
-								<li><a href="blog-single.html" class="uppercase">Scope and Services</a></li>
+								<li><a href="about.html#our-history" class="uppercase">Our History / Timeline</a></li>
+								<li><a href="about.html#our-mission" class="uppercase">Our Mission and Vision</a></li>
+								<li><a href="about.html#scope-and-services" class="uppercase">Scope and Services</a></li>
 							</ul>
 						</li>
 						<li class="menu-has-children">
-							<a href="">Projects</a>
+							<a href="projects.html">Projects</a>
 							<ul>
-								<li><a href="blog-home.html" class="uppercase">Ongoing Projects</a></li>
-								<li><a href="blog-single.html" class="uppercase">Completed Projects</a></li>
+								<li><a href="projects.html#ongoing-projects" class="uppercase">Ongoing Projects</a></li>
+								<li><a href="projects.html#completed-projects" class="uppercase">Completed Projects</a></li>
 							</ul>
 						</li>
-						<li><a href="contact.html">Certifications & Awards</a></li>
-						<li><a href="contact.html">Careers</a></li>
-						<li><a href="contact.html">Contacts</a></li>
+						<li><a href="certifications-and-awards.html">Certifications & Awards</a></li>
+						<li><a href="careers.html">Careers</a></li>
+						<li><a href="contacts.html">Contacts</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -361,7 +361,7 @@
 				</div>
 
 				<div class="col-lg-12 text-center">
-					<a href="#" class="genric-btn danger-border circle mt-30">View All Projects</a>
+					<a href="#" class="genric-btn danger-border circle mt-30">Explore Projects</a>
 				</div>
 
 			</div>
@@ -481,7 +481,7 @@
 					<p class="pb-20">
 						We at Dalkia Inc. are searching for people that are excited to grow and use their abilities to influence the future. Apply by emailing your resume to info@dalkiainc.com if you are already qualified, experienced, and competent and would want to be considered for any of the positions listed below. We would love to speak with someone who is driven to achieve.
 					</p>
-					<a class="primary-btn" href="#">Apply Now</a>
+					<a class="primary-btn" href="careers.html">Apply Now</a>
 				</div>
 				<div class="col-lg-4 col-md-12">
 					<img src="dist/img/careers/apply-now.jpg" alt="" class="img-fluid">
@@ -625,6 +625,7 @@
 	</div>
 
 	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="dist/js/popper.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
 	<script src="js/easing.min.js"></script>
 	<script src="js/hoverIntent.js"></script>
@@ -639,33 +640,8 @@
 	<script src="js/mail-script.js"></script>
 	<script src="dist/js/timeline.min.js"></script>
 	<script src="dist/js/aos.js"></script>
-	
-
-
 	<script src="js/main.js"></script>
-
-	<script>
-		$(document).ready(function () {
-			$('.owl-carousel').owlCarousel({
-				loop: true,
-				margin: 10,
-				items: 1,
-				autoplay: true,
-				autoplayTimeout: 3000,
-				autoplayHoverPause: true,
-				animateOut: 'fadeOut'
-			});
-
-			$('.timeline').timeline({
-				forceVerticalMode: 500,
-				mode: 'horizontal',
-				visibleItems: 3,
-				rtlMode: true
-			});
-
-			AOS.init();
-		});
-	</script>
+	<script src="dist/js/custom.js"></script>
 </body>
 
 </html>
